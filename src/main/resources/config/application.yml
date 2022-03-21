@@ -4,3 +4,10 @@ spring:
   messages:
     basename: i18n/messages
     encoding: UTF-8
+
+api:
+  fastforex:
+    io: https://api.fastforex.io
+    apiKey: e1f04a0af8-e18634ec89-r8xxb8
+server:
+  port: 8081
