@@ -13,7 +13,7 @@ public class ExchangeRequest {
     @Currency
     private String from;
 
-    @Positive(message = ErrorMessages.INVALID_CURRENCY)
+    @Positive(message = ErrorMessages.INVALID_AMOUNT)
     private BigDecimal amount;
 
     @Currency
