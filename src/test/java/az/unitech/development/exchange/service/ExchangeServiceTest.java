@@ -82,8 +82,8 @@ public class ExchangeServiceTest {
         exchangeRequest.setAmount(BigDecimal.valueOf(100));
 
         var toUSD =
-                exchangeRequest.getAmount()
-                        .divide(currencyMap.get(exchangeRequest.getFrom()), 4, RoundingMode.HALF_UP);
+                exchangeRequest.getAmount().divide(
+                        currencyMap.get(exchangeRequest.getFrom()), 4, RoundingMode.HALF_UP);
 
         var fromUSD = toUSD.multiply(currencyMap.get(exchangeRequest.getTo()),
                 new MathContext(4, RoundingMode.HALF_UP));

@@ -27,11 +27,11 @@ public class ExchangeRequest {
         return "USD".equals(to);
     }
 
-    public void setFrom(String from){
+    public void setFrom(String from) {
         this.from = from.toUpperCase();
     }
 
-    public void setTo(String to){
+    public void setTo(String to) {
         this.to = to.toUpperCase();
     }
 

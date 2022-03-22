@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("api")
 public class CurrencyClientProperties {
 
-    public FastForex fastForex= new FastForex();
+    public FastForex fastForex = new FastForex();
 
     @Data
     public static class FastForex {
